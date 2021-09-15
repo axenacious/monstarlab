@@ -62,7 +62,7 @@ func (ctrl *FavouriteController) SaveFavourite(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, "Favourite Added")
+	c.JSON(http.StatusOK, gin.H{"status": "Favourite Added"})
 	return
 }
 
